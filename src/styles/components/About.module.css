@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6rem;
+  align-items: center;
+}
+
+.typedTitle {
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.sub {
+  text-align: center;
+  width: 60%;
+  margin: 3px;
+  font-size: 1.25rem;
+  padding-bottom: 7rem;
+}
+
+.icon {
+  margin: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin: 5px;
+  }
+  .typedTitle {
+    padding-bottom: 4rem;
+    text-align: center;
+  }
+}
