@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import NavBar from '../components/NavBar';
 import About from '../components/About';
+import ProjectCard from '../components/ProjectCard';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <NavBar />
       <About />
+      <ProjectCard />
     </div>
   );
 }

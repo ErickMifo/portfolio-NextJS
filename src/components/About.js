@@ -6,7 +6,7 @@ import { Fade } from '@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
 import styles from '../styles/components/About.module.css';
 
-function Home() {
+function About() {
   const Curriculo = 'https://docs.google.com/document/d/e/2PACX-1vSr_O3HFkGZv3Lj3XYZ4tFqPnH7VcqBUfbOuvarn8yBYnpCX-oi5bQ-xh7WqOUPde01fd_4MemUwPVo/pub';
 
   return (
@@ -61,4 +61,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default About;
