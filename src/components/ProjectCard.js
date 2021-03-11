@@ -1,36 +1,50 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from '../styles/components/ProjectCard.module.css';
 
-function ProjectCard() {
+function ProjectCard({
+  order, image, imageDescription, githubLink, projectDescription, projectLink,
+}) {
   return (
 
-    <div className={styles.container}>
+    <div className={styles.container} style={{ flexDirection: order }}>
 
       <div className={styles.textContainer}>
         <p
           className={styles.info}
         >
-          Projeto feito em ReactJS consumindo dados de uma API
+          {projectDescription}
         </p>
 
         <a
           className={styles.link}
           rel="noopener noreferrer"
           target="_blank"
-          href="https://github.com/ErickMifo/cn-jokes"
+          href={githubLink}
         >
-          https://github.com/ErickMifo/cn-jokes
+          Link para o Repositório
         </a>
       </div>
 
-      <img
-        src="images/cn-jokes.png"
-        alt="project1"
-        className={styles.image1}
-      />
+      <a rel="noopener noreferrer" target="_blank" href={projectLink}>
+        <img
+          src={image}
+          alt={imageDescription}
+          className={styles.image1}
+        />
+      </a>
 
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+  order: PropTypes.oneOf(['row', 'row-reverse']).isRequired,
+  image: PropTypes.string.isRequired,
+  imageDescription: PropTypes.string.isRequired,
+  githubLink: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string.isRequired,
+  projectLink: PropTypes.string.isRequired,
+};
 
 export default ProjectCard;

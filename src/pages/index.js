@@ -14,7 +14,14 @@ export default function Home() {
       </Head>
       <NavBar />
       <About />
-      <ProjectCard />
+      <ProjectCard
+        order="row-reverse"
+        image="images/cn-jokes.png"
+        imageDescription="Projeto1"
+        githubLink="https://github.com/ErickMifo/cn-jokes"
+        projectDescription="Projeto feito em ReactJS consumindo dados de uma API para um processo seltivo."
+        projectLink="https://truckpag-teste-erickmifo.vercel.app/"
+      />
     </div>
   );
 }
