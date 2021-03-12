@@ -6,17 +6,21 @@
 }
 
 :root {
-  --beige: #deb887;
-  --white: #ffff;
-  --black: #000000;
-  --blue: rgb(54, 84, 94);
+  --blue-purple: #8d86c9;
+  --white: #fafafa;
+  --dark-purple: #242038;
+  --blue: #725ac1;
 }
 
 body,
 input,
 textarea,
 button {
-  font: 400 1rem sans-serif;
+  font: 400 1rem "Cormorant Garamond", serif;
+}
+
+h1 {
+  font-family: "Cormorant Garamond", serif;
 }
 
 button {

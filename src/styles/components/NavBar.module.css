@@ -7,8 +7,8 @@
 
 .buttonContato {
   border-radius: 14px;
-  border: 2px solid var(--beige);
-  background-color: var(--beige);
+  border: 2px solid var(--blue-purple);
+  background-color: var(--blue-purple);
   color: var(--white);
   cursor: pointer;
   font-size: 1.25rem;
@@ -32,12 +32,12 @@
 }
 
 .buttonProjetos:hover {
-  color: var(--beige);
+  color: var(--blue-purple);
 }
 
 .buttonHome {
-  background-color: var(--black);
-  color: var(--black);
+  background-color: var(--dark-purple);
+  color: var(--dark-purple);
   background: none;
   border: none;
   font-size: 2rem;
@@ -70,7 +70,7 @@ button.active.focus
     margin-top: 1%;
     margin-right: 3%;
     font-size: 40px;
-    color: var(--black);
+    color: var(--dark-purple);
     cursor: pointer;
   }
 

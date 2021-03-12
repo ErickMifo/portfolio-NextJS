@@ -6,7 +6,6 @@ function ProjectCard({
   order, image, imageDescription, githubLink, projectDescription, projectLink,
 }) {
   return (
-
     <div className={styles.container} style={{ flexDirection: order }}>
 
       <div className={styles.textContainer}>
